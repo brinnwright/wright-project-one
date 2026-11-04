@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    color: black;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+a {
+    color: black;
+}
+
+a:focus {
+    outline: 2px solid black;
+}
+
+/* NAVIGATION */
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PAGE ONE */
+
+.type-hero {
+    background-color: pink;
+    padding: 100px 60px;
+}
+
+.type-hero h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+
+.type-hero h1 span {
+    color: red;
+}
+
+.hero-description {
+    width: 450px;
+}
+
+.hero-link {
+    font-weight: bold;
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 60px;
+}
+
+.album-collection > h2 {
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+.album-entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.album-art {
+    padding: 60px;
+}
+
+.album-info {
+    padding: 60px;
+}
+
+.album-info h3 {
+    font-size: 55px;
+}
+
+.album-name {
+    font-weight: bold;
+}
+
+.eighties {
+    background-color: lightpink;
+}
+
+.nineties {
+    background-color: lightyellow;
+}
+
+.thousands {
+    background-color: lavender;
+}
+
+.modern {
+    background-color: lightgreen;
+}
+
+/* ALBUM DESIGNS */
+
+.art-eighties,
+.art-nineties,
+.art-thousands,
+.art-modern {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.art-eighties {
+    background-color: steelblue;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+.art-eighties strong {
+    font-size: 65px;
+}
+
+.art-nineties {
+    background-color: red;
+    color: yellow;
+}
+
+.art-nineties strong {
+    font-size: 75px;
+}
+
+.art-nineties span {
+    font-size: 45px;
+}
+
+.art-thousands {
+    background-color: purple;
+    color: white;
+}
+
+.art-thousands strong {
+    font-size: 60px;
+}
+
+.art-modern {
+    background-color: yellowgreen;
+}
+
+.art-modern span {
+    font-size: 100px;
+}
+
+/* RESEARCH SECTIONS */
+
+.research-section,
+.reflection-section {
+    padding: 60px;
+    border-top: 1px solid black;
+}
+
+.examples-section {
+    background-color: #eee5da;
+}
+
+.research-section ul {
+    margin-left: 30px;
+    line-height: 2;
+}
+
+.next-page {
+    background-color: salmon;
+    padding: 70px;
+}
+
+.next-page h2 {
+    font-size: 70px;
+}
+
+/* PAGE TWO */
+
+.timeline-hero {
+    padding: 100px 60px;
+    background-color: beige;
+}
+
+.timeline-hero h1 {
+    font-size: 100px;
+}
+
+.timeline-hero h1 span {
+    color: orangered;
+}
+
+.timeline-intro {
+    padding: 60px;
+    background-color: white;
+}
+
+/* TIMELINE */
+
+.history-timeline {
+    margin: 60px;
+    border-left: 4px solid black;
+    padding-left: 40px;
+}
+
+.timeline-event {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    padding: 50px 0px;
+    border-bottom: 1px solid gray;
+}
+
+.timeline-date span {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.timeline-content h2 {
+    font-size: 36px;
+}
+
+.timeline-art {
+    width: 350px;
+    margin-bottom: 25px;
+}
+
+.timeline-art figcaption {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.timeline-research,
+.timeline-reflection {
+    padding: 60px;
+}
+
+.timeline-examples {
+    background-color: #eee5da;
+}
+
+.timeline-examples ul {
+    margin-left: 30px;
+    line-height: 2;
+}
+
+.timeline-ending {
+    background-color: black;
+    color: white;
+    padding: 70px;
+}
+
+.timeline-ending h2 {
+    font-size: 65px;
+}
+
+.timeline-ending a {
+    color: white;
+}
+
+/* FOOTER */
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: white;
+    border-top: 2px solid black;
+}
