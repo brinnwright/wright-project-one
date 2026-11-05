@@ -11,17 +11,17 @@ body {
 }
 
 h1 {
-    font-size: 70px;
-    margin-bottom: 25px;
-}
-
-h2 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
 h3 {
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 15px;
 }
 
@@ -31,118 +31,108 @@ p {
     margin-bottom: 15px;
 }
 
-a {
+/* NAVIGATION BAR */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+
+nav h2 {
+    margin-right: auto;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+nav a {
     color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: pink;
 }
 
 a:focus {
     outline: 2px solid black;
 }
 
-/* NAVIGATION */
+/* HEADER */
 
-.site-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
-    background-color: white;
-    border-bottom: 2px solid black;
+header {
+    text-align: center;
+    padding: 90px 30px;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: none;
+header h1 {
+    font-size: 65px;
 }
 
-nav a {
-    margin-left: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* PAGE ONE */
-
-.type-hero {
-    background-color: pink;
-    padding: 100px 60px;
-}
-
-.type-hero h1 {
-    font-size: 100px;
-    line-height: 1;
-}
-
-.type-hero h1 span {
-    color: red;
-}
-
-.hero-description {
-    width: 450px;
-}
-
-.hero-link {
-    font-weight: bold;
-}
-
-.intro-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 60px;
-}
-
-.album-collection > h2 {
-    background-color: black;
-    color: white;
-    padding: 25px;
-}
-
-.album-entry {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.album-art {
-    padding: 60px;
-}
-
-.album-info {
-    padding: 60px;
-}
-
-.album-info h3 {
-    font-size: 55px;
-}
-
-.album-name {
-    font-weight: bold;
-}
-
-.eighties {
+.pink {
     background-color: lightpink;
 }
 
-.nineties {
+.beige {
+    background-color: beige;
+}
+
+/* INTRO SECTIONS */
+
+.intro {
+    padding: 60px;
+    background-color: white;
+}
+
+.intro p {
+    max-width: 800px;
+}
+
+.intro h2 {
+    margin-top: 25px;
+}
+
+.intro ul {
+    margin-left: 25px;
+    line-height: 2;
+}
+
+/* ALBUM SECTIONS */
+
+.album {
+    padding: 60px;
+    text-align: center;
+}
+
+.album p {
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+.yellow {
     background-color: lightyellow;
 }
 
-.thousands {
+.purple {
     background-color: lavender;
 }
 
-.modern {
+.green {
     background-color: lightgreen;
 }
 
-/* ALBUM DESIGNS */
+/* ALBUM COVERS */
 
-.art-eighties,
-.art-nineties,
-.art-thousands,
-.art-modern {
-    width: 100%;
+.cover {
+    width: 350px;
     height: 350px;
+    margin: 30px auto;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,161 +140,92 @@ nav a {
     text-align: center;
 }
 
-.art-eighties {
+.cover h1 {
+    font-size: 55px;
+}
+
+.cover h2 {
+    font-size: 28px;
+}
+
+.blue {
     background-color: steelblue;
     color: white;
-    font-family: Georgia, serif;
 }
 
-.art-eighties strong {
-    font-size: 65px;
-}
-
-.art-nineties {
+.red {
     background-color: red;
     color: yellow;
 }
 
-.art-nineties strong {
-    font-size: 75px;
-}
-
-.art-nineties span {
-    font-size: 45px;
-}
-
-.art-thousands {
+.violet {
     background-color: purple;
     color: white;
 }
 
-.art-thousands strong {
-    font-size: 60px;
-}
-
-.art-modern {
+.lime {
     background-color: yellowgreen;
+    color: black;
 }
 
-.art-modern span {
+.lime h1 {
     font-size: 100px;
+    font-weight: normal;
 }
 
-/* RESEARCH SECTIONS */
+/* TIMELINE PAGE */
 
-.research-section,
-.reflection-section {
-    padding: 60px;
-    border-top: 1px solid black;
+.timeline {
+    margin: 60px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-left: 5px solid black;
 }
 
-.examples-section {
-    background-color: #eee5da;
+.event {
+    padding: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid gray;
 }
 
-.research-section ul {
-    margin-left: 30px;
-    line-height: 2;
-}
-
-.next-page {
-    background-color: salmon;
-    padding: 70px;
-}
-
-.next-page h2 {
-    font-size: 70px;
-}
-
-/* PAGE TWO */
-
-.timeline-hero {
-    padding: 100px 60px;
-    background-color: beige;
-}
-
-.timeline-hero h1 {
-    font-size: 100px;
-}
-
-.timeline-hero h1 span {
+.event > h2 {
+    font-size: 45px;
     color: orangered;
 }
 
-.timeline-intro {
+.event p {
+    max-width: 600px;
+}
+
+/* NEXT PAGE SECTION */
+
+.next {
     padding: 60px;
-    background-color: white;
+    text-align: center;
+    background-color: lightpink;
 }
 
-/* TIMELINE */
-
-.history-timeline {
-    margin: 60px;
-    border-left: 4px solid black;
-    padding-left: 40px;
-}
-
-.timeline-event {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 40px;
-    padding: 50px 0px;
-    border-bottom: 1px solid gray;
-}
-
-.timeline-date span {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.timeline-content h2 {
-    font-size: 36px;
-}
-
-.timeline-art {
-    width: 350px;
-    margin-bottom: 25px;
-}
-
-.timeline-art figcaption {
-    font-size: 12px;
-    margin-top: 10px;
-}
-
-.timeline-research,
-.timeline-reflection {
-    padding: 60px;
-}
-
-.timeline-examples {
-    background-color: #eee5da;
-}
-
-.timeline-examples ul {
-    margin-left: 30px;
-    line-height: 2;
-}
-
-.timeline-ending {
+.next a {
+    display: inline-block;
+    padding: 15px;
     background-color: black;
     color: white;
-    padding: 70px;
+    text-decoration: none;
 }
 
-.timeline-ending h2 {
-    font-size: 65px;
-}
-
-.timeline-ending a {
-    color: white;
+.next a:hover {
+    background-color: gray;
 }
 
 /* FOOTER */
 
-.site-footer {
-    display: flex;
-    justify-content: space-between;
+footer {
     padding: 25px;
-    background-color: white;
-    border-top: 2px solid black;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0px;
 }
