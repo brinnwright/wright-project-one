@@ -229,3 +229,11 @@ footer {
 footer p {
     margin-bottom: 0px;
 }
+.album-image {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border: 2px solid black;
+}
